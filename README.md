@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://lms.beetroot.academy/static/media/1.db74eb52.svg" width="200"></a></p>
+<p align="center"><a href="https://github.com/krollzilla/beetroot-project"><img src="https://lms.beetroot.academy/static/media/1.db74eb52.svg" width="200"></a></p>
 
 
 
