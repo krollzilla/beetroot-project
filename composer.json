@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "krollzilla/beetroot-project",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "beetroot-project on laravel",
+    "keywords": ["beetroot", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
