@@ -16,4 +16,7 @@ yarn-error.log
 db_data
 docker-compose.yml
 test.php
+mysql
+nginx
+php
 

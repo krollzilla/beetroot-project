@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -230,5 +230,5 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
+    'openweathermap_app' => env('OPEN_WEATHER_MAP')
 ];
