@@ -24,13 +24,16 @@ class WeatherClient
     {
         $cities = $this->getCities();
         $dataByCities = [];
+
         foreach ($cities as $city) {
             $url = sprintf(
                 'api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric',
                 $city,
                 config('app.openweathermap_app')
             );
+
             $response = Http::get($url);
+
             if ($response->status() !== Response::HTTP_OK) {
                 throw new Exception("Invalid response: {$response->body()}");
             }

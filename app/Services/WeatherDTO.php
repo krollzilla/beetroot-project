@@ -7,11 +7,11 @@ use Illuminate\Contracts\Support\Arrayable;
 final class WeatherDTO implements Arrayable
 {
 
+    private const DEFAULT_PRECISION = 1;
     private $temperature;
     private $humidity;
     private $pressure;
     private $wind;
-    private const DEFAULT_PRECISION = 1;
 
     public function __construct($weatherDetails)
     {

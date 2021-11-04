@@ -1,11 +1,10 @@
 <?php
 
-
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\Services\WeatherClient;
-
+use App\Services\WeatherSaver;
 
 class WeatherFetcher extends Command
 {
@@ -14,10 +13,13 @@ class WeatherFetcher extends Command
 
     public function handle(): void
     {
-        $weather= (new WeatherClient)->getWeatherDetails();
+        $weather = (new WeatherClient)->getWeatherDetails();
+
         $this->output->table(
             ['City', 'Temperature, °C', 'Humidity, %', 'Pressure, mm Hg', 'Wind, m/s'],
             $weather
         );
+
+        echo (new WeatherSaver)->addWeatherToDB($weather);
     }
 }

@@ -18,27 +18,22 @@ class CitiesSeeder extends Seeder
     {
         DB::table('cities')->insert([
             'city' => 'Kyiv',
-            //'created_at' => getdate()
         ]);
 
         DB::table('cities')->insert([
             'city' => 'Lviv',
-            //'created_at' => getdate()
         ]);
 
         DB::table('cities')->insert([
             'city' => 'Donetsk',
-           // 'created_at' => getdate()
         ]);
 
         DB::table('cities')->insert([
             'city' => 'Lutsk',
-            //'created_at' => getdate()
         ]);
 
         DB::table('cities')->insert([
             'city' => 'Rivne',
-           // 'created_at' => getdate()
         ]);
     }
 }

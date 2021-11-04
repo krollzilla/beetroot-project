@@ -19,8 +19,9 @@ class CreateCityWeatherTable extends Migration
             $table->bigInteger('temperature');
             $table->bigInteger('humidity');
             $table->bigInteger('pressure');
-            $table->bigInteger('wind_speed');
+            $table->float('wind_speed');
             $table->timestamp('created_at');
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

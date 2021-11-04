@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
-        Commands\WeatherGetter::class
+        Commands\WeatherFetcher::class
     ];
 
     /**
