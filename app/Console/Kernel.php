@@ -2,7 +2,8 @@
 
 namespace App\Console;
 
-use App\Console\Commands\WeatherGetter;
+use App\Console\Commands\WeatherFetcher;
+use App\Console\Commands\WeatherFetcherHistory;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -15,7 +16,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
-        Commands\WeatherFetcher::class
+        Commands\WeatherFetcher::class,
+        Commands\WeatherFetcherHistory::class
     ];
 
     /**
